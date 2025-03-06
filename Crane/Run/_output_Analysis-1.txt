@@ -1,0 +1,87 @@
+03/05/2025 11:54:31
+
+########   Starting run step number: 1   Increment number: 1   ########
+
+Running command: C:\Users\jromero\Desktop\PrePoMax v2.2.11 dev\PrePoMax v2.2.11 dev\Solver\ccx_dynamic.exe Analysis-1
+
+************************************************************
+
+CalculiX Version 2.22, Copyright(C) 1998-2024 Guido Dhondt
+CalculiX comes with ABSOLUTELY NO WARRANTY. This is free
+software, and you are welcome to redistribute it under
+certain conditions, see gpl.htm
+
+************************************************************
+
+You are using an executable made on Sun Aug  4 19:44:24     2024
+
+  The numbers below are estimated upper bounds
+
+  number of:
+
+   nodes:        60117
+   elements:        29522
+   one-dimensional elements:            0
+   two-dimensional elements:            0
+   integration points per element:            4
+   degrees of freedom per node:            3
+   layers per element:            1
+
+   distributed facial loads:          158
+   distributed volumetric loads:            0
+   concentrated loads:            0
+   single point constraints:        16932
+   multiple point constraints:            1
+   terms in all multiple point constraints:            1
+   tie constraints:            0
+   dependent nodes tied by cyclic constraints:            0
+   dependent nodes in pre-tension constraints:            0
+
+   sets:           10
+   terms in all sets:        92105
+
+   materials:            1
+   constants per material and temperature:            2
+   temperature points per material:            1
+   plastic data points per material:            0
+
+   orientations:            0
+   amplitudes:            6
+   data points in all amplitudes:            6
+   print requests:            0
+   transformations:            0
+   property cards:            0
+
+
+ STEP            1
+
+ Static analysis was selected
+
+ Decascading the MPC's
+
+ Determining the structure of the matrix:
+ Using up to 1 cpu(s) for setting up the structure of the matrix.
+ number of equations
+ 171885
+ number of nonzero lower triangular matrix elements
+ 5630763
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+ Using up to 1 cpu(s) for the symmetric stiffness/mass contributions.
+
+ Factoring the system of equations using the symmetric pardiso solver
+ number of threads = 1
+
+ Using up to 1 cpu(s) for the stress calculation.
+
+
+ Job finished
+
+________________________________________
+
+Total CalculiX Time: 6.362650
+________________________________________
+
+
+Process elapsed time:       7.744 s
