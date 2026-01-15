@@ -1,0 +1,68 @@
+*HEADING
+Weld of Metal sheet
+**
+**
+*INCLUDE, input=all.msh
+*INCLUDE, input=elements.msh
+**INCLUDE, input=Trayectory_element.msh
+**assign elements to an element set
+
+
+
+*INCLUDE, input=S235.mat
+*SOLID SECTION, ELSET=C3D8, MATERIAL=S235
+
+          1.,
+**
+**
+
+*NSET,NSET=FIX_XYZ
+ 49
+** RestricciÛn XZ en los nodos  [Poner numero del nodo aqui]
+*NSET,NSET=FIX_XZ
+251
+** RestricciÛn Z en los nodos  [Poner numero del nodo aqui]
+*NSET,NSET=FIX_Z
+256
+
+*Boundary, Fixed
+FIX_XYZ,1,1
+FIX_XYZ,2,2
+FIX_XYZ,3,3
+FIX_XZ,1,1
+FIX_XZ,3,3
+FIX_Z,3,3
+
+*INITIAL CONDITIONS, TYPE=TEMPERATURE
+ Nall, 20.
+**
+*PHYSICAL CONSTANTS, ABSOLUTE ZERO=-273.15, STEFAN BOLTZMANN=5.669E-8
+**physical constants, stefan boltzmann=5.669e-11, absolute zero=-273.15
+**stefan boltzmann=5.669e-8 W/m¬≤K‚Å¥
+**
+
+************************************
+**      STEP 2 (Heat Transfer ContinuaciÛn):
+************************************
+*STEP, INC=20000
+*RESTART,WRITE,FREQUENCY=1
+*HEAT TRANSFER
+0.001, 1.2, 1e-5, 0.05
+*CONTROLS, PARAMETERS=TIME INCREMENTATION
+15, 150, 1, 150, 6, 25, , 2, , 0.001
+**
+*DFLUX, OP=NEW
+ C3D8, BFNU, 1
+**
+*FILM, OP=NEW
+
+**
+*OUTPUT, FREQUENCY=1
+*NODE PRINT, NSET=Nall
+NT
+*NODE FILE, NSET=Nall
+NT
+**
+*EL FILE, NSET=Nall
+HFL
+*END STEP
