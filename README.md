@@ -15,10 +15,11 @@ This repository provides a **welding simulation case** for **CalculiX (ccx)** us
 > - **with results** (includes solver outputs and ParaView-ready data, depending on the converter workflow)
 
 ## 📁 Repository Structure
+
 crane/
-├── Weld_I_dflux/ # Case inputs: INP, mesh, required data (no outputs)
-├── Weld_I_dflux_with_results/ # Same case, but includes results (solver outputs)
-├── 03_FRD_paraview_converter/ # FRD → ParaView converter/tools
-├── 04_calculix/ # Precompiled CalculiX (ccx)
-└── Patches/ # Patches for compiling your own ccx
+├── Weld_I_dflux/                  # Case inputs: INP, mesh, required data (no outputs)
+├── Weld_I_dflux_with_results/     # Same case, but includes results (solver outputs)
+├── 03_FRD_paraview_converter/     # FRD → ParaView converter/tools
+├── 04_calculix/                  # Precompiled CalculiX (ccx)
+└── Patches/                       # Patches for compiling your own ccx
 
