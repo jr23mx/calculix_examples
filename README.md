@@ -1,4 +1,3 @@
-# calculix_examples
 # Weld_I_dflux (CalculiX / ccx) + FRD → ParaView Converter
 
 This repository includes:
