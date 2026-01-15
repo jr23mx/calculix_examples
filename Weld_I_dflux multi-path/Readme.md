@@ -1,4 +1,4 @@
-# Weld_I_dflux (CalculiX / ccx) + FRD → ParaView Converter
+# Laser Welding Multipath (Only Thermal)
 
 This repository provides a **welding simulation case** for **CalculiX (ccx)** using **DFLUX**, plus a workflow to visualize results in **ParaView** (converting from `.frd`), and optional patches for users who want to compile `ccx` themselves.
 
