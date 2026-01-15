@@ -18,8 +18,9 @@ This repository provides a **welding simulation case** for **CalculiX (ccx)** us
 
 ```text
 Weld_I_dflux_multi-path/
-├── 01_Weld_I_dflux/                  # Case inputs: INP, mesh, required data (no outputs)
-├── 02_Weld_I_dflux_with_results/     # Same case, but includes results (solver outputs)
+├── 01_Files to Run/                  # Case inputs: INP, mesh, required data (no outputs)
+├── 02_Results/     # includes results
 ├── 03_FRD_paraview_converter/     # FRD → ParaView converter/tools
-├── 04_calculix/                  # Precompiled CalculiX (ccx)
-└── 05_Patches/                       # Patches for compiling your own ccx
+├── 04_Calculix_2.21/                  # Precompiled CalculiX (ccx)
+├── 05_Patches/                       # Patches for compiling your own ccx
+└── 06_Images/                       
