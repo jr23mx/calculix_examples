@@ -6,8 +6,8 @@ REM Ruta del ejecutable de CalculiX
 REM Retrocede una carpeta
 set EXE_DIR=%INP_DIR%..\
 
-REM Ruta a la subcarpeta 04_Calculix
-set EXE_mkl=%EXE_DIR%\04_Calculix
+REM Ruta a la subcarpeta 04_Calculix_2.21
+set EXE_mkl=%EXE_DIR%\04_Calculix_2.21
 
 REM Cambio de directorio
 cd /d %INP_DIR%
@@ -18,3 +18,4 @@ REM funcion para detectar el archivo
     "%EXE_mkl%\ccx_MKL" %%~nf
 )	
 pause
+
